@@ -4,13 +4,17 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
-  font-size: 14px;
+  font-size: 1.6rem;
 }
 
 div {
   width: 100%;
-  margin: 20px;
+  margin: 2rem;
 }
 
 div li {
@@ -19,21 +23,39 @@ div li {
 }
 
 div li + li {
-  margin-top: 15px;
+  margin-top: 1.5rem;
 }
 
-button {
-  background: #7159c1;
-  color: #fff;
-  border: 0;
-  padding: 10px 15px;
+.btn {
+  color: #000;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  display: inline-block;
+  border-radius: 10rem;
+  font-size: 1.6rem;
+  transition: all .2s;
+  border: none;
   cursor: pointer;
-  margin-top: 15px;
-  font-weight: bold;
-  font-size: 14px;
+  background: greenyellow;
+  margin-left: 3rem;
 }
 
-div li button {
-  margin: 0 15px;
-  background: #ca4949;
+.btn--list {
+  color: #fff;
+  background: orangered;
+}
+
+.btn:hover {
+  transform: translateY(-0.3rem);
+  box-shadow: 0 1rem 2rem rgba(#000, .2);
+}
+
+.btn:active, .btn:focus{
+  transform: translateY(0.3rem);
+  box-shadow: 0 .5rem 1rem rgba(#000, .2);
+}
+
+.btn--like {
+  background: steelblue;
 }
